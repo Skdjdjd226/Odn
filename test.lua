@@ -101,7 +101,7 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
-    Main = Window:AddTab({ Title = "Combat", Icon = "swords" }),
+    Combat = Window:AddTab({ Title = "Combat", Icon = "swords" }),
     Misc = Window:AddTab({ Title = "Misc", Icon = "component" }),
     Crates = Window:AddTab({ Title = "Crates", Icon = "shopping-cart" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
