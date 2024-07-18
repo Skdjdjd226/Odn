@@ -128,7 +128,7 @@ local Tab5 = Window:NewTab("Credits")
 
 local Combat = Tab:NewSection("Combat")
 local Shop = Tab2:NewSection("Shop")
-local World = Tab3:NewSection("Misc")
+local Misc = Tab3:NewSection("Misc")
 
 local Credits = Tab4:NewSection("Created By SumitScripts")
 local Credits1 = Tab4:NewSection("Visual from triple creation")
@@ -268,15 +268,15 @@ World:NewToggle("Night Mode", "ToggleInfo", function(toggled)
     getgenv().night_mode_Enabled = toggled
 end)
 
-World:NewToggle("Trail", "ToggleInfo", function(toggled)
+Misc:NewToggle("Trail", "ToggleInfo", function(toggled)
     getgenv().trail_Enabled = toggled
 end)
 
-World:NewToggle("Destroy Particles (idk what this)", "ToggleInfo", function(toggled)
+Misc:NewToggle("Destroy Particles (idk what this)", "ToggleInfo", function(toggled)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Destroy%20Particle%20Emitters",true))()
 end)
 
-World:NewToggle("Anti Lag/removed lag", "ToggleInfo", function(toggled)
+Misc:NewToggle("Anti Lag/removed lag", "ToggleInfo", function(toggled)
 _G.Settings = {
     Players = {
         ["Ignore Me"] = true, -- Ignore your Character
@@ -303,10 +303,10 @@ _G.Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
 end)
 
-World:NewToggle("Aiming Mechanism", "ToggleInfo", function(toggled)   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/M%3ABlade%20Ball%20Mechanism",true))()
+Misc:NewToggle("Aiming Mechanism", "ToggleInfo", function(toggled)   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/M%3ABlade%20Ball%20Mechanism",true))()
 end)
 
-World:NewToggle("Antiafk", "ToggleInfo", function(toggled)    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Proxylol/OtherScripts/main/AntiAfk.lua'),true))()
+Misc:NewToggle("Antiafk", "ToggleInfo", function(toggled)    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Proxylol/OtherScripts/main/AntiAfk.lua'),true))()
 end)
 
 --// trail
