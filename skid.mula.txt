@@ -67,64 +67,10 @@ end
 local  Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Triple Hub V4 | Blade Ball", "Sentinel")
 
---Locals
-local playerName = game.Players.LocalPlayer.Name
-local placeName = game.PlaceId
-local playerId = game.Players.LocalPlayer.UserId
-local placeId = game.PlaceId
-local gameTime = os.date("%c", os.time())
-local placeId = game.PlaceId
-local player = game:GetService("Players").LocalPlayer
-local accountAge = player.AccountAge
-local executor = identifyexecutor() or "unknown"
-local currentDate = os.date("%Y-%m-%d")
-local gameName = game.Name
-
-local Tab = Window:NewTab("Info")
-local Section = Tab1:NewSection("PlayerInfo")
-local Section = Tab1:NewSection("UserName:" .. playerName)
-local Section = Tab1:NewSection("DisplayName: " .. player.DisplayName)
-local Section = Tab1:NewSection("UserID: " .. playerId)
-local Section = Tab1:NewSection("AccountAge: " .. accountAge)
-
-if table.find({Enum.Platform.Android}, game:GetService("UserInputService"):GetPlatform()) then 
-local Section = Tab1:NewSection("Device : Android")
-
-end
-
-if table.find({Enum.Platform.IOS}, game:GetService("UserInputService"):GetPlatform()) then 
-local Section = Tab1:NewSection("Device : IOS")
-
-end
-
-if table.find({Enum.Platform.Windows}, game:GetService("UserInputService"):GetPlatform()) then 
-local Section = Tab1:NewSection("Device : PC (Windows)")
-
-end
-
-if table.find({Enum.Platform.OSX}, game:GetService("UserInputService"):GetPlatform()) then 
-local Section = Tab1:NewSection("Device : PC (OSX or macOS)")
-
-end
-
-if table.find({Enum.Platform.Linux}, game:GetService("UserInputService"):GetPlatform()) then 
-local Section = Tab1:NewSection("Device : PC Linux")
-
-end
-
-if table.find({Enum.Platform.XBoxOne}, game:GetService("UserInputService"):GetPlatform()) then 
-local Section = Tab1:NewSection("Device : XBoxOne")
-
-end
-local Section = Tab1:NewSection("Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
-local Section = Tab1:NewSection("PlaceId: " .. placeId)
-local Section = Tab1:NewSection("Date: " .. currentDate)
-local Section = Tab1:NewSection("executor: " .. executor)
-
-local Tab2 = Window:NewTab("Combat")
-local Tab3 = Window:NewTab("Shop")
-local Tab4 = Window:NewTab("Misc")
-local Tab5 = Window:NewTab("Credits")
+local Tab1 = Window:NewTab("Combat")
+local Tab2 = Window:NewTab("Shop")
+local Tab3 = Window:NewTab("Misc")
+local Tab4 = Window:NewTab("Credits")
 
 local Combat = Tab:NewSection("Combat")
 local Shop = Tab2:NewSection("Shop")
