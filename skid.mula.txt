@@ -210,7 +210,7 @@ ExplosionCrateManual()
     print("Clicked")
 end)
 
-World:NewToggle("Night Mode", "ToggleInfo", function(toggled)
+Misc:NewToggle("Night Mode", "ToggleInfo", function(toggled)
     getgenv().night_mode_Enabled = toggled
 end)
 
